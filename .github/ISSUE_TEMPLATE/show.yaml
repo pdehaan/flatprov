@@ -1,0 +1,41 @@
+name: [FlatImprov] Show
+description: Online show
+title: "[FlatImprov] Upcoming online show"
+labels: show
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Only the show URL, name, and description are required. All other fields are optional.
+  - type: input
+    id: show_url
+    attributes:
+      label: Show URL
+      description: The URL of the show.
+      placeholder: e.g. https://www.yoursite.com/show
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Event name
+      description: "REQUIRED: The name of the event."
+      placeholder: e.g. https://www.instagram.com/p/somethingsomething
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "REQUIRED: The description of the event."
+      placeholder: ""
+    validations:
+      required: true
+  - type: input
+    id: poster_url
+    attributes:
+      label: Poster URL
+      description: "Optional: The URL to the social media post."
+      placeholder: e.g. https://www.instagram.com/p/somethingsomething
+    validations:
+      required: false
